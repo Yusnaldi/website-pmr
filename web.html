@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>PMR Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pmr-navbar">
+  <div class="container">
+
+    <!-- BRAND / LOGO -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+      <img src="/images/logo-pmr.png" alt="Logo PMR" class="navbar-logo me-2">
+      <span class="brand-text">Vanguard Rescue Squad</span>
+    </a>
+
+    <!-- TOGGLER (MOBILE) -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center gap-4">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#structure">Structure</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kegiatan">Kegiatan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Artikel">
+              Artikel
+            </a>
+        </li>
+
+        <li class="nav-item ms-2">
+          <a class="btn btn-danger px-4 rounded-pill" href="#contact">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- hero -->
+<section class="hero-section">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <span class="hero-badge">Palang Merah Remaja</span>
+    <h1 class="hero-title">
+      Membangun Generasi<br>
+      Peduli & Berjiwa Kemanusiaan
+    </h1>
+    <p class="hero-subtitle">
+      PMR adalah wadah pembinaan siswa untuk belajar kepedulian, kerja sama,
+      dan keterampilan pertolongan pertama dalam kehidupan sehari-hari.
+    </p>
+    <div class="hero-actions">
+      <button class="btn btn-danger btn-join" id="joinBtn">Gabung Sekarang</button>
+      <a href="#kegiatan" class="btn btn-outline-light">Lihat Kegiatan</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE PMR -->
+<section id="profile" class="profile-section py-5">
+  <div class="container">
+    
+    <!-- JUDUL -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Profil PMR</h2>
+      <p class="section-subtitle">
+        Mengenal lebih dekat Palang Merah Remaja di sekolah kami
+      </p>
+    </div>
+
+    <div class="row align-items-center">
+      
+      <!-- TEKS -->
+      <div class="col-lg-6 mb-4">
+        <h3 class="profile-heading">Tentang PMR</h3>
+        <p class="profile-text">
+          Palang Merah Remaja (PMR) merupakan kegiatan ekstrakurikuler yang
+          bergerak di bidang kemanusiaan dan kesehatan. PMR membina siswa
+          agar memiliki kepedulian sosial, kedisiplinan, serta kesiapan
+          dalam memberikan pertolongan pertama.
+        </p>
+
+        <h4 class="profile-subheading">Visi</h4>
+        <p class="profile-text fst-italic">
+          Menjadikan Palang Merah Remaja (PMR) sebagai wadah unggulan di sekolah
+          yang berprestasi tinggi dalam kepalangmerahan, humanis, dan konsisten
+          mengamalkan 7 prinsip PMI beserta Tri Bakti PMR
+        </p>
+
+        <h4 class="profile-subheading">Misi</h4>
+        <ul class="profile-list">
+          <li>Meningkatkan kompetensi anggota PMR pada bidang kesehatan, P3K, dan mitigasi
+             bencana agar tumbuh sebagai relawan tangguh, cepat tanggap, serta mandiri.</li>
+          <li>Menyelenggarakan penyuluhan kesehatan berkala di sekolah mengenai pola hidup sehat, 
+              pencegahan penyakit, higiene pribadi, nutrisi tepat, serta isu kesehatan remaja
+              demi kesadaran optimal siswa.</li>
+          <li>Memperkokoh hubungan antar anggota, ekskul lain di sekolah,
+               dan PMI lokal guna sinergi prestasi bersama.</li>
+          <li>Membuat PMR jadi pilihan siswa, berbudi pekerti luhur, 
+              serta aktif membentuk sekolah yang sehat dan rukun.</li>
+        </ul>
+      </div>
+
+      <!-- ILUSTRASI / FOTO -->
+      <div class="col-lg-6 text-center">
+        <img src="images/pmrbersama.jpeg" alt="Kegiatan PMR" class="img-fluid profile-image">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STRUKTUR ORGANISASI -->
+<section id="structure" class="struktur-section py-5">
+  <div class="container">
+
+    <!-- JUDUL -->
+    <div class="text-center mb-5">
+      <h2 class="struktur-title">Struktur Organisasi PMR</h2>
+      <p class="struktur-subtitle">
+        Susunan kepengurusan PMR sekolah secara berjenjang dan resmi
+      </p>
+    </div>
+
+    <!-- KEPALA SEKOLAH -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-4 col-lg-3">
+        <div class="struktur-card struktur-top text-center">
+          <div class="pmi-icon">
+            <img src="images/logo-pmr.png">
+          </div>
+          <img src="images/kepalasekolah.jpeg">
+          <h5>Dian Purnamasari M.pd</h5>
+          <span>Kepala Sekolah</span>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- WAKIL KEPALA SEKOLAH -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-4 col-lg-3">
+        <div class="struktur-card text-center">
+          <div class="pmi-icon">
+            <img src="images/logo-pmr.png">
+          </div>
+          <img src="images/pak_mahfud.jpeg">
+          <h5>Mahfud M.M</h5>
+          <span>Wakil Kepala Sekolah</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PEMBINA -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-4 col-lg-3">
+        <div class="struktur-card text-center">
+          <div class="pmi-icon">
+            <img src="images/logo-pmr.png">
+          </div>
+          <img src="images/bu_yuli.jpeg">
+          <h5>Yuliana S.pd</h5>
+          <span>Pembina Ekskul PMR</span>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- PELATIH -->
+    <div class="row justify-content-center g-4 mb-5">
+      <div class="col-md-4 col-lg-3">
+        <div class="struktur-card text-center">
+          <div class="pmi-icon">
+            <img src="images/logo-pmr.png">
+          </div>
+          <img src="images/ka_irawanpmi.jpeg">
+          <h5>IRAWAN</h5>
+          <span>Pelatih PMR</span>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3">
+        <div class="struktur-card text-center">
+           <div class="pmi-icon">
+            <img src="images/logo-pmr.png">
+          </div>
+          <img src="images/ka_arapmi.jpeg">
+          <h5>AZZAHRA</h5>
+          <span>Pelatih PMR</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- KETUA PMR -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-4 col-lg-3">
+        <div class="struktur-card text-center">
+           <div class="pmi-icon">
+            <img src="images/logo-pmr.png">
+          </div>
+          <img src="images/gita.jpeg">
+          <h5>Gita Chairunnisa</h5>
+          <span>Ketua PMR</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WAKIL KETUA PMR -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-4 col-lg-3">
+        <div class="struktur-card text-center">
+           <div class="pmi-icon">
+            <img src="images/logo-pmr.png">
+          </div>
+          <img src="images/ika.jpeg">
+          <h5>Ika Khafid Aulia</h5>
+          <span>Wakil Ketua PMR</span>
+        </div>
+      </div>
+    </div>
+     
+
+    <!-- SEKRETARIS & BENDAHARA -->
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4 col-lg-3">
+        <div class="struktur-card text-center">
+           <div class="pmi-icon">
+            <img src="images/logo-pmr.png">
+          </div>
+          <img src="images/luna.jpeg">
+          <h5>Aluna Sagita</h5>
+          <span>Sekretaris</span>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3">
+        <div class="struktur-card text-center">
+           <div class="pmi-icon">
+            <img src="images/logo-pmr.png">
+          </div>
+          <img src="images/aliyah.jpeg">
+          <h5>Aliyah Nurul Azizah</h5>
+          <span>Bendahara</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= KEGIATAN ================= -->
+<section id="kegiatan" class="kegiatan-section py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Kegiatan PMR</h2>
+      <p class="section-subtitle">
+        Aktivitas PMR yang membentuk kepedulian dan keterampilan
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- KARTU 1 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="kegiatan-card">
+          <img src="images/latihanrutin_pmr.jpeg" class="img-fluid">
+          <div class="kegiatan-content">
+            <h5>Latihan Rutin</h5>
+            <p>KPM, ASB, P3K, & Tandu</p>
+
+            <!-- BUTTON MODAL -->
+            <button class="btn btn-outline-danger btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalLatihan">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- KARTU 2 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="kegiatan-card">
+          <img src="images/psn.jpeg" class="img-fluid">
+          <div class="kegiatan-content">
+            <h5>Siaga Kesehatan</h5>
+            <p>Tim PMR</p>
+
+            <button class="btn btn-outline-danger btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalUKS">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- KARTU 3 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="kegiatan-card">
+          <img src="images/sosialisasi_pmr.jpeg" class="img-fluid">
+          <div class="kegiatan-content">
+            <h5>Ngobras</h5>
+            <p>Edukasi</p>
+
+            <button class="btn btn-outline-danger btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalAksi">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- KARTU 4 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="kegiatan-card">
+          <img src="images/jumbara.jpeg" class="img-fluid">
+          <div class="kegiatan-content">
+            <h5>Pelatihan & Lomba</h5>
+            <p>Jumbara dan simulasi.</p>
+
+            <button class="btn btn-outline-danger btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalLomba">
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODAL 1 ================= -->
+<div class="modal fade" id="modalLatihan" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Latihan Rutin PMR</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-3">
+            <img src="images/latihanrutin_pmr.jpeg" class="img-fluid rounded">
+          </div>
+          <div class="col-md-7">
+            <ul class="list-unstyled">
+              <li><strong>📅 Waktu:</strong> Setiap Jumat</li>
+              <li><strong>📍 Tempat:</strong> Lapangan Sekolah</li>
+              <li><strong>👥 Peserta:</strong> Anggota PMR</li>
+            </ul>
+            <p>
+              Latihan rutin PMR bertujuan melatih keterampilan
+              pertolongan pertama, evakuasi korban, serta kesiapsiagaan
+              dalam situasi darurat.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+     
+
+<!-- ================= MODAL 2 ================= -->
+<div class="modal fade" id="modalUKS" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Siaga Kesehatan Sekolah</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-3">
+            <img src="images/psn.jpeg" class="img-fluid rounded">
+          </div>
+          <div class="col-md-7">
+            <ul class="list-unstyled">
+              <li><strong>📅 Waktu:</strong> Setiap Jumat</li>
+              <li><strong>📍 Lokasi:</strong> Lingkungan Sekolah</li>
+              <li><strong>👥 Petugas:</strong> Anggota PMR</li>
+            </ul>
+            <p>
+              PMR berperan sebagai tim siaga kesehatan yang menjaga kebersihan lingkungan sekolah
+              dan pelayanan kesehatan
+            </p>
+          </div>
+        </div>
+      </div>
+       <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ================= MODAL 3 ================= -->
+<div class="modal fade" id="modalAksi" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Ngobras</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-3">
+            <img src="" class="img-fluid rounded">
+          </div>
+          <div class="col-md-7">
+            <ul class="list-unstyled">
+              <li><strong>📅 Waktu:</strong> Setiap Jumat</li>
+              <li><strong>📍 Lokasi:</strong> Lingkungan Sekolah</li>
+              <li><strong>🎯 Tujuan:</strong> mengedukasi seluruh siswa</li>
+            </ul>
+            <p>
+              mengedukasi seluruh siswa agar dapat mencegah dari berbagai penyakit
+          </div>
+        </div>
+      </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ================= MODAL 4 ================= -->
+<div class="modal fade" id="modalLomba" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Pelatihan & Lomba PMR</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-3">
+            <img src="images/jumbara.jpeg" class="img-fluid rounded">
+          </div>
+          <div class="col-md-7">
+            <ul class="list-unstyled">
+              <li><strong>📅 Waktu:</strong> Sesuai waktu jumbara</li>
+              <li><strong>📍 Lokasi:</strong> luar sekolah</li>
+              <li><strong>🎯 Tujuan:</strong> Mengasah keterampilan PMR</li>
+            </ul>
+            <p>
+              Kegiatan pelatihan dan lomba seperti Jumbara dan simulasi
+              bertujuan meningkatkan kemampuan anggota PMR dalam bidang
+              pertolongan pertama, kepemimpinan, serta kerja sama tim.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<section id="Artikel" class="py-5 bg-light">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Artikel</h2>
+      <p class="text-muted">ASB, KPM, Tandu, dan P3K</p>
+    </div>
+
+    <div class="accordion" id="accordionArtikel">
+      <div class="row g-4">
+
+        <!-- KPM -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 artikel-hover">
+            <img src="images/ASB.jpeg" class="card-img-top">
+
+            <div class="card-body text-center">
+              <span class="badge bg-danger mb-2">PMR</span>
+              <h5 class="fw-bold">ASB</h5>
+              <p class="text-muted small">Ayo Siaga Bencana</p>
+
+              <button class="btn btn-outline-danger btn-sm"
+                data-bs-toggle="collapse"
+                data-bs-target="#asb"
+                aria-expanded="false"
+                aria-controls="asb">
+                Baca Selengkapnya
+              </button>
+
+              <div id="asb"
+                class="accordion-collapse collapse mt-3"
+                data-bs-parent="#accordionArtikel">
+                <p class="small text-muted text-start">
+                  Ayo Siaga Bencana (ASB) adalah kegiatan edukasi yang bertujuan meningkatkan kesiapsiagaan dalam menghadapi berbagai jenis bencana, seperti gempa bumi, banjir, kebakaran, dan bencana lainnya. Materi ini sangat penting karena Indonesia merupakan negara yang rawan bencana.
+
+                Dalam kegiatan ASB, peserta diajarkan bagaimana cara mengenali tanda-tanda bencana, langkah evakuasi yang benar, serta tindakan yang harus dilakukan sebelum, saat, dan setelah bencana terjadi. Selain itu, peserta juga dilatih untuk tetap tenang dan tidak panik agar dapat mengambil keputusan dengan tepat.
+
+                Melalui pelatihan ini, diharapkan anggota PMR mampu menjadi pelopor keselamatan di lingkungan sekolah maupun masyarakat, serta membantu mengurangi risiko dan dampak yang ditimbulkan oleh bencana.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPM -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 artikel-hover">
+            <img src="images/kpm.jpeg" class="artikel-img">
+
+            <div class="card-body text-center">
+              <span class="badge bg-danger mb-2">PMR</span>
+              <h5 class="fw-bold">KPM</h5>
+              <p class="text-muted small">Kepalang Merahan</p>
+
+              <button class="btn btn-outline-danger btn-sm"
+                data-bs-toggle="collapse"
+                data-bs-target="#kpm">
+                Baca Selengkapnya
+              </button>
+
+              <div id="kpm"
+                class="accordion-collapse collapse mt-3"
+                data-bs-parent="#accordionArtikel">
+                <p class="small text-muted text-start">
+                 Kepalangmerahan merupakan materi dasar dalam kegiatan Palang Merah Remaja (PMR) yang membahas tentang sejarah, prinsip, dan peran Gerakan Palang Merah dan Bulan Sabit Merah di dunia. Materi ini bertujuan untuk menanamkan nilai kemanusiaan, kepedulian, dan semangat menolong sesama tanpa membedakan suku, agama, ras, maupun golongan.
+
+                Gerakan Palang Merah didirikan oleh Henry Dunant yang tergerak hatinya melihat korban perang yang tidak mendapatkan perawatan. Dari situlah lahir prinsip-prinsip dasar seperti Kemanusiaan, Kesamaan, Kenetralan, Kemandirian, Kesukarelaan, Kesatuan, dan Kesemestaan.
+
+                Melalui materi Kepalangmerahan, anggota PMR diajarkan untuk memiliki sikap peduli, tanggap terhadap situasi darurat, serta mampu bekerja sama dalam membantu masyarakat. Nilai-nilai ini sangat penting dalam membentuk karakter remaja yang berjiwa sosial dan bertanggung jawab.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Tandu -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 artikel-hover">
+            <img src="images/tandu.jpeg" class="artikel-img">
+
+            <div class="card-body text-center">
+              <span class="badge bg-danger mb-2">PMR</span>
+              <h5 class="fw-bold">TANDU</h5>
+              <p class="text-muted small">Darurat</p>
+
+              <button class="btn btn-outline-danger btn-sm"
+                data-bs-toggle="collapse"
+                data-bs-target="#kpm">
+                Baca Selengkapnya
+              </button>
+
+              <div id="kpm"
+                class="accordion-collapse collapse mt-3"
+                data-bs-parent="#accordionArtikel">
+                <p class="small text-muted text-start">
+                  Tandu merupakan alat yang digunakan untuk memindahkan korban yang mengalami cedera atau kondisi darurat agar tidak terjadi perburukan pada kondisi tubuhnya. Dalam situasi tertentu, tandu dapat dibuat secara sederhana menggunakan bahan yang tersedia, seperti bambu dan kain.
+
+                Materi tandu dalam PMR tidak hanya mengajarkan cara membawa korban, tetapi juga teknik yang benar agar keselamatan korban dan penolong tetap terjaga. Kesalahan dalam proses evakuasi dapat menyebabkan cedera semakin parah, sehingga diperlukan kerja sama tim dan koordinasi yang baik.
+
+                Pelatihan ini bertujuan agar anggota PMR mampu melakukan evakuasi secara cepat, tepat, dan aman ketika menghadapi kondisi darurat di sekolah maupun di lingkungan sekitar.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P3K -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 artikel-hover">
+            <img src="images/p3k.jpeg" class="artikel-img">
+
+            <div class="card-body text-center">
+              <span class="badge bg-danger mb-2">PMR</span>
+              <h5 class="fw-bold">P3K</h5>
+              <p class="text-muted small">Pertolongan Pertama</p>
+
+              <button class="btn btn-outline-danger btn-sm"
+                data-bs-toggle="collapse"
+                data-bs-target="#p3k">
+                Baca Selengkapnya
+              </button>
+
+              <div id="p3k"
+                class="accordion-collapse collapse mt-3"
+                data-bs-parent="#accordionArtikel">
+                <p class="small text-muted text-start">
+                  Pertolongan Pertama Pada Kecelakaan (P3K) adalah tindakan awal yang diberikan kepada seseorang yang mengalami cedera atau sakit mendadak sebelum mendapatkan penanganan medis lebih lanjut. P3K bertujuan untuk menyelamatkan nyawa, mencegah kondisi menjadi lebih buruk, serta memberikan rasa nyaman kepada korban.
+
+                Materi P3K mencakup penanganan luka ringan, mimisan, pingsan, keseleo, hingga tindakan dasar dalam kondisi darurat. Dalam praktiknya, penolong harus tetap tenang, memperhatikan keselamatan diri, dan melakukan tindakan sesuai prosedur.
+
+                Dengan memahami P3K, anggota PMR diharapkan mampu menjadi penolong pertama yang sigap dan bertanggung jawab dalam berbagai situasi, baik di sekolah maupun di masyarakat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Kontak PMR</h2>
+      <p class="section-subtitle">
+        Hubungi pengurus PMR melalui media berikut
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-lg-3">
+        <a href="https://wa.me/6288298580360" target="_blank" class="contact-card">
+          <i class="bi bi-whatsapp contact-wa"></i>
+          
+          <h5>WhatsApp</h5>
+          <p>Chat langsung pengurus</p>
+          <span>Humas</span>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <a href="mailto:pmr@email.com" class="contact-card">
+          <i class="bi bi-envelope-fill contact-email"></i>
+          <h5>Email</h5>
+          <p>Kontak resmi PMR</p>
+          <span>pmr@email.com</span>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <a href="https://www.instagram.com/pmr.smknuris?igsh=bWllN3dhbTB5Z2hr" target="_blank" class="contact-card">
+          <i class="bi bi-instagram contact-ig"></i>
+          <h5>Instagram</h5>
+          <p>Info & dokumentasi</p>
+          <span>@pmr.smknuris</span>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <a href="https://maps.app.goo.gl/XPz9Ux3LrSzfKNci8" target="_blank" class="contact-card">
+          <i class="bi bi-geo-alt-fill contact-map"></i>
+          <h5>Lokasi</h5>
+          <p>Sekretariat PMR</p>
+          <span>SMK Nurul Islam</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER WAVE ================= -->
+<footer class="pmr-footer-wave">
+
+  <!-- WAVE SVG -->
+  <div class="footer-wave animated-wave">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C150,120 350,0 600,40 850,80 1050,20 1200,40 L1200,0 L0,0 Z" class="wave wave1"></path>
+      <path d="M0,50 C200,100 400,10 600,30 800,50 1000,10 1200,30 L1200,0 L0,0 Z" class="wave wave2"></path>
+      <path d="M0,40 C250,90 450,20 600,20 750,20 950,40 1200,20 L1200,0 L0,0 Z" class="wave wave3"></path>
+    </svg>
+  </div>
+
+  <div class="container footer-content">
+    <div class="row gy-4">
+
+      <!-- ================= KIRI ================= -->
+      <div class="col-lg-8">
+        <div class="row gy-4">
+
+          <!-- BRAND -->
+          <div class="col-lg-5 col-md-6">
+            <div class="footer-brand d-flex align-items-center mb-3">
+              <img src="/images/logo-pmr.png" alt="PMR Logo">
+              <h5>Vanguard Rescue Squad</h5>
+            </div>
+            <p class="footer-text">
+              Palang Merah Remaja adalah wadah pembinaan siswa
+              untuk membentuk generasi peduli, sigap, dan berjiwa kemanusiaan.
+            </p>
+          </div>
+
+          <!-- MENU -->
+          <div class="col-lg-3 col-md-6">
+            <h6 class="footer-title">Menu</h6>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#structure">Structure</a></li>
+              <li><a href="#kegiatan">Kegiatan</a></li>
+            </ul>
+          </div>
+
+          <!-- KONTAK -->
+          <div class="col-lg-4 col-md-6">
+            <h6 class="footer-title">Kontak</h6>
+            <ul class="footer-contact">
+              <li>
+                <i class="bi bi-whatsapp"></i>
+                <a href="https://wa.me/6288298580360" target="_blank">
+                  Humas
+                </a>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill"></i>
+                <a href="mailto:pmr@email.com">pmr@email.com</a>
+              </li>
+              <li>
+                <i class="bi bi-geo-alt-fill"></i>
+                SMK Nurul Islam Jakarta Timur
+              </li>
+            </ul>
+          </div>
+
+          <!-- SOSIAL (TETAP DI KIRI) -->
+          <div class="col-lg-12">
+            <h6 class="footer-title">Sosial Media</h6>
+            <div class="footer-social">
+              <a href="https://www.instagram.com/pmr.smknuris?utm_source=qr&igsh=Y3NyZGNuM256dXFv" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@pmr.smknurulislam?_r=1&_t=ZS-93mDCWSu4Mn" target="_blank">
+                <i class="bi bi-tiktok"></i>
+              </a>
+              <a href="https://wa.me/6281234567890" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="mailto:pmr@email.com">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================= KANAN ================= -->
+<div class="col-lg-4">
+  <h6 class="footer-title">Nilai PMR</h6>
+
+  <div class="footer-values-grid">
+
+    <!-- 7 Prinsip -->
+    <div>
+      <span class="footer-subtitle">7 Prinsip</span>
+      <ul class="footer-list">
+        <li>Kemanusiaan</li>
+        <li>Kesamaan</li>
+        <li>Kenetralan</li>
+        <li>Kemandirian</li>
+        <li>Kesukarelaan</li>
+        <li>Kesatuan</li>
+        <li>Kesemestaan</li>
+      </ul>
+    </div>
+
+    <!-- 3 Tribakti -->
+    <div>
+      <span class="footer-subtitle">3 Tribakti</span>
+      <ul class="footer-list">
+        <li>Keterampilan hidup sehat</li>
+        <li>Berkarya & berbakti</li>
+        <li>Persahabatan nasional & internasional</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+      © 2026 <strong>PMR Vanguard Rescue Squad</strong>. All Rights Reserved.
+    </div>
+  </div>
+
+</footer>
+
+<a href="#Artikel" class="floating-materi">
+  <i class="bi bi-journal-medical"></i>
+</a>
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="web.js"></script>
+</body>
+</html>
